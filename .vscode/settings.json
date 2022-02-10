@@ -1,4 +1,9 @@
 {
     "scm.alwaysShowActions": true,
+    "git.alwaysShowStagedChangesResourceGroup": true,
+    "git.autofetch": true,
+    "git.fetchOnPull": true,
+    "scm.providerCountBadge": "auto",
+    "scm.repositories.visible": 20,
     "scm.alwaysShowRepositories": true
 }
