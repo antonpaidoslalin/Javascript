@@ -1,0 +1,28 @@
+html,body{
+    margin:0px;
+    /* font-family:Arial, Helvetica, sans-serif, 'Liberation Sans'; */
+    font-size:20px;
+    font-weight: bolder;
+    background-color: #244F30;
+    color:white;
+}
+
+.titulo{
+    /* font-family:Arial, Helvetica, sans-serif; */
+    font-size: 35px;
+    font-weight: bolder;
+    text-align: center;
+    background-color: black;
+    color:white;
+}
+
+.carta{
+    position: relative;
+    width:100px;
+    left:100px;
+    margin-left:-50px;
+}
+
+#computadora-cartas, #jugador-cartas{
+    height: 180px;
+}

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="gl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Somos Galiza</title>
+</head>
+<style>
+    
+    body {
+        background-color:navy;
+        color: #aaa01a;
+        font-family:Arial, Helvetica, sans-serif;}
+    table, th, td {
+  border: 1px solid black;
+}
+
+</style>
+<body font color="#111133" bgcolor="#cccccc" >
+    <div style='float:left;'>
+
+        <script type='text/javascript'>
+       // import 'startTime.js';
+     //variable today: Aquí almacenaremos a data   
+        let today = new Date();
+    
+     /* variable m = variable para o mes. Dado que o primeiro mes 
+     -xaneiro- recibe o número 0, hai que sumarlle 1 para que xaneiro,
+     no canto de mes 0, sexa o mes 1, Febreiro 2, no canto de 1, Outubro 10,
+     no canto de 9, etc. */
+        let m = today.getMonth() + 1;
+      //variable mes: aquí faremos que os meses   
+        let mes = (m < 10) ? '0' + m : m;
+      // Visualización da data
+        document.write('Data: '+today.getDate(),'/', +mes ,'/',+today.getFullYear());
+
+            //Función startTime, para xestionar a adquisición de datos de hora.
+            function startTime(){
+
+            today=new Date();
+
+            h=today.getHours();
+
+            m=today.getMinutes();
+
+            s=today.getSeconds();
+
+            m=checkTime(m);
+
+            s=checkTime(s);
+
+            document.getElementById('reloj').innerHTML=h+':'+m+':'+s;
+
+            t=setTimeout('startTime()',500);}
+            
+
+            //Función checkTime para engadir os ceros (0) iniciais cando as horas, minutos ou segundos son menores de 10
+            function checkTime(i)
+
+            {
+                if (i<10) {i='0' + i;}return i;
+            }
+
+            window.onload=function(){startTime();}
+
+            
+     
+       
+        
+        </script></div></br>
+        
+        <div id='reloj' style='font-family: "Liberation Sans"; width: 150px; background-color: black;font-size:35px;color: green ; text-align: center'></div>
+
+    <script SRC='appobj.js'></script>
+    <h1 >SOMOS GALIZA</h1>
+    <p>Somos río, somos fonte, somos auga, somos terra; somos meigos,feiticeiras e menciñeiras.</p>
+    <p>Somos unha cultura distinta, chea de xeitos únicos de face-las cousas e de trascender a nós mesm@s.</p>
+    <p>Somos Galiza</p>
+
+    <p>Listado de resultados de app.js :</br>
+        <script SRC='app.js'></script>
+    </p>
+
+
+    <table  cellpadding="1">
+        <tr>
+            <th>0</th>
+            <th>1</th>
+          </tr>
+    <tr>
+        <td>a</td>
+        <td>b</td>
+    </tr>    
+    </table>
+</body>
+</html>
