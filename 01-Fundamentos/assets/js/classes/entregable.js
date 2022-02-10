@@ -45,11 +45,11 @@ class Entregable{
             return this.entregado;
         }
     imprimirEntregable(){
-        t = this.getTitulo();
+       /* t = this.getTitulo();
         console.log (t);
         g = this.getGenero();
-        e = this.getEntregado();
-     //console.log(`${get}`);
+        e = this.getEntregado();*/
+     console.log(`${this.getTitulo} \n${this.getGenero}\n${this.getEntregado}`);
             
         }
             
@@ -88,10 +88,10 @@ class Entregable{
         }
         imprimirSerie(){
             super.imprimirEntregable();
-            c  = this.getCreador();
-            tm = this.getNumerodeTemporadas();
-            console.log(`Creador:                   ${c}
-                        \nNúmero de Temporadas:     ${tm}`);
+           /* c  = this.getCreador();
+            tm = this.getNumerodeTemporadas();*/
+            console.log(`Creador:                   ${this.getCreador}
+                        \nNúmero de Temporadas:     ${this.getNumerodeTemporadas}`);
         }
         
     }
@@ -124,11 +124,9 @@ class Entregable{
         }
     
         imprimirVideoJuego(){
-            h  = this.getHorasEstimadas();
-            co = this.getCompanhia();
             super.imprimirEntregable();
-            console.log(`Horas estimadas para acabarlo: ${h}
-                       \nCompañía desarrolladora:       ${co}`);
+            console.log(`Horas estimadas para acabarlo: ${this.horasEstimadas}
+                       \nCompañía desarrolladora:       ${this.getCompanhia}`);
         }
                                                  
         }
