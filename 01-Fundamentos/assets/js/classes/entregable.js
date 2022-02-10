@@ -2,7 +2,7 @@ class Entregable{
     // Atributos - Propiedades   
         titulo;
         genero;
-        entregado;
+        entregado=false;
        
     //Construtor
         constructor(titulo,  genero, entregado ){
@@ -35,21 +35,18 @@ class Entregable{
     
     //Métodos
         entregar(){
-            this.setEntregado(true);
+            this.setEntregado= true;
         }
         
         devolver(){
-            this.setEntregado(false);
+            this.setEntregado=false;
+            
         }
         isEntregado(){
             return this.entregado;
         }
     imprimirEntregable(){
-       /* t = this.getTitulo();
-        console.log (t);
-        g = this.getGenero();
-        e = this.getEntregado();*/
-     console.log(`${this.getTitulo} \n${this.getGenero}\n${this.getEntregado}`);
+        console.log(`${this.getTitulo} \n${this.getGenero}\n${this.getEntregado}`);
             
         }
             
@@ -136,3 +133,11 @@ class Entregable{
         //imprimir series y videojuegos
         s01.imprimirSerie();
         v01.imprimirVideoJuego();
+        s01.entregar();
+        s01.imprimirSerie();
+        v01.entregar();
+        v01.imprimirVideoJuego();
+        v01.devolver();
+        v01.imprimirVideoJuego();
+        s01.devolver();
+        s01.imprimirSerie();
