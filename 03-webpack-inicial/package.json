@@ -1,0 +1,11 @@
+{
+  "name": "webpack-inicial",
+  "version": "1.0.0",
+  "description": "Esta es la configuracion inicial en webpack",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Anton Vega Cabanas",
+  "license": "ISC"
+}
