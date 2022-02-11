@@ -1,6 +1,3 @@
-<<<<<<< HEAD
-(()=>{"use strict";(e=>{console.log("Creando etiqueta h1");const n=document.createElement("h1");n.innerText="Hola, Antón",document.body.append(n)})()})();
-=======
 /*
  * ATTENTION: The "eval" devtool has been used (maybe by default in mode: "development").
  * This devtool is neither made for production nor for readable output files.
@@ -97,4 +94,3 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 /******/ 	
 /******/ })()
 ;
->>>>>>> e7481f6d9988de1f88d7c236bb5b9e4be2225fbb

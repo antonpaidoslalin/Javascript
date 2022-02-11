@@ -1307,3 +1307,4 @@
 03-webpack-inicial/node_modules/yeoman-generator/node_modules/which/README.md
 03-webpack-inicial/node_modules/yeoman-generator/node_modules/which/which.js
 03-webpack-inicial/node_modules/yeoman-generator/node_modules/which/bin/which
+package-lock.json
