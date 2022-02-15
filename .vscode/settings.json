@@ -5,5 +5,6 @@
     "git.fetchOnPull": true,
     "scm.providerCountBadge": "auto",
     "scm.repositories.visible": 20,
-    "scm.alwaysShowRepositories": true
+    "scm.alwaysShowRepositories": true,
+    "explorer.compactFolders": false
 }
