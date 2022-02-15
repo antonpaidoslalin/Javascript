@@ -20,12 +20,19 @@ module.exports={
             },
             {
                 test: /styles.css$/,
-                use: [MiniCssExtract.loader, loader]
+                use: [MiniCssExtract.loader, 'css-loader']
             }
         ]
     },
     optimization:{},
     plugins: [
-         new HtmlWebpack()
+         new HtmlWebpack({
+             title:'O meu primeiro Webpack',
+             template: './src/index.html'
+         }),
+         new MiniCssExtract({
+             filename:'[name]-[fullhash].css',
+             ignoreOrder:false
+         })
     ]
 }

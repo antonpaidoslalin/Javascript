@@ -23,6 +23,7 @@
     "webpack-dev-server": "^4.7.4"
   },
   "dependencies": {
+    "import-local": "^3.1.0",
     "npm": "^8.5.0",
     "npm-check-updates": "^12.3.0"
   }
