@@ -1,4 +1,5 @@
-
+import '../css/componentes.css';
+import webpacklogo from '../assets/img/webpack-log.png';
 export const saludar = (nombre) => {
     console.log('Creando etiqueta h1');
 
